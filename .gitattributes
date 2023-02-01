@@ -1,0 +1,10 @@
+# A `gitattribute` file is a simple text file that gives `attributes`
+# to pathnames.
+# See https://git-scm.com/docs/gitattributes for more details.
+#
+
+*               text=auto        eol=lf
+
+# Attribute of files that will not be added to archive files
+.gitignore      export-ignore
+.gitattributes  export-ignore
