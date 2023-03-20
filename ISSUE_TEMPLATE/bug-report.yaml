@@ -1,0 +1,69 @@
+name: "\U0001F41B Bug Report"
+title: "\U0001F41B [Bug]: "
+description: "Create a bug report to help fix a problem."
+labels: ["\U0001F41B Bug"]
+body:
+  - type: markdown
+    id: notice
+    attributes:
+      value: |
+        ### Notice
+        - If you think this project doesn't have a feature, open the issue with **\U0001F680 Feature Request** template.
+        - If you think this is a question, open the issue with **\U0001F914 Question** template.
+        - Write your issue with clear and understandable English or Portuguese (any of them).
+  - type: textarea
+    id: description
+    attributes:
+      label: "Bug Description"
+      description: "A clear and detailed description of what the bug is."
+      placeholder: "Explain your problem as clear and detailed."
+    validations:
+      required: true
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: How to Reproduce
+      description: "Steps to reproduce the behavior and what should be observed in the end."
+      placeholder: "Step by step how to replicate your problem and what should be seen in the end."
+      value: |
+          Steps to reproduce the behavior:
+          1. Go to '....'
+          2. Click on '....'
+          3. Do '....'
+          4. See '....'
+    validations:
+      required: true
+  - type: textarea
+    id: snippet
+    attributes:
+      label: "Code Snippet (optional)"
+      description: "Code snippet may be really helpful to describe the bug."
+      placeholder: "Share a code to explain the bug better."
+      render: python
+      value: |
+        # An example to describe the bug
+        import PyKCS11
+        import binascii
+        from cryptography import x509
+        from cryptography.hazmat.primitives import serialization
+        from cryptography.hazmat.backends import default_backend as db
+        from cryptography.hazmat.primitives.asymmetric.padding import PKCS1v15
+        from cryptography.hazmat.primitives.hashes import SHA1, Hash
+
+        lib = '/usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so'
+
+        pkcs11 = PyKCS11.PyKCS11Lib()
+        pkcs11.load(lib)
+        slots = pkcs11.getSlotList(tokenPresent=True)
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Checklist:"
+      description: "By submitting this issue, you confirm that:"
+      options:
+        - label: "I agree to follow this repository [Code of Conduct](https://github.com/peci-2022-g14/.github/blob/main/CODE_OF_CONDUCT.md)."
+          required: true
+        - label: "I have checked for existing issues that describe my problem prior to opening this one."
+          required: true
+        - label: "I understand that improperly formatted bug reports may be closed without explanation."
+          required: true
