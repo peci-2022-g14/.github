@@ -1,0 +1,20 @@
+# An `editorconfig` file helps maintain consistent coding styles
+# for multiple developers working on the same project across various
+# editors and IDEs.
+# See https://editorconfig.org for more details.
+#
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+tab_width = unset
+trim_trailing_whitespace = true
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
