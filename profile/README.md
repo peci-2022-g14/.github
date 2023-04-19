@@ -4,7 +4,8 @@
 
 ## Projects
 
- - [**Sueca:**](https://github.com/peci-2022-g14/sueca) The online sueca game monorepo on containers.
+ - [**Sueca:**](https://github.com/peci-22-g14/sueca) The online sueca game application.
+ - [**Sueca API:**](https://github.com/peci-2022-g14/sueca-api) The online sueca game API on containers.
 
 ## Advisor
 
