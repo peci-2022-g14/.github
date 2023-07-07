@@ -4,7 +4,8 @@
 
 ## Projects
 
- - [**Sueca API:**](https://github.com/peci-2022-g14/sueca-api) This was used for testing.
+ - [**Sueca API:**](https://github.com/peci-2022-g14/sueca-api) This was the old API implementation.
+ - [**Sueca API:**](https://github.com/peci-2022-g14/test_site) This was used for testing.
  - [**PECI22G14:**](https://github.com/peci-2022-g14/peci22g14) The online safe sueca game monorepo on containers.
 
 ## Advisor
